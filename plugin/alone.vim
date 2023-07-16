@@ -1,4 +1,4 @@
-if g:search_alone_enable != 1
+if exists('search_alone_disable')
   finish
 endif
 
