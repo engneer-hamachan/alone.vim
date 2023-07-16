@@ -1,5 +1,5 @@
 function! alone#Alone()
-    let result = system('alone ' . bufname(""))
+    let result = system('alone -d ./')
     let words=split(result,"\n")
     let currentFileWords = []
 
