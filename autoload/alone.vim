@@ -1,5 +1,5 @@
 function! alone#Alone()
-    let result = system('rsgo ' . bufname(""))
+    let result = system('alone ' . bufname(""))
     let words=split(result,"\n")
     let currentFileWords = []
 
