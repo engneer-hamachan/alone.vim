@@ -4,12 +4,6 @@ function! alone#Alone()
     let currentFileWords = []
 
     for word in words
-        if currentFileWord !=# ''
-            call add(currentFileWords, currentFileWord)
-        endif
-    endfor
-
-    for word in currentFileWords
       if exists('b:current_syntax') && exists('b:current_syntax') && b:current_syntax == word
         unlet b:current_syntax
       endif
