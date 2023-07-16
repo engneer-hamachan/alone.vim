@@ -1,5 +1,5 @@
-function! alone#Alone()
-    let result = system('alone -d ./')
+function! alone#Alone(dir)
+    let result = system('alone -d ' . a:dir)
     let words=split(result,"\n")
 
     for word in words
