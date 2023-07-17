@@ -3,7 +3,8 @@ function! alone#Alone(dir)
     let words=split(result,"\n")
 
     for word in words
-      exe 'syntax match ' . word . ' "\<' . word . '\>" containedin=ALL'
-      exe 'hi ' . word . ' ctermfg=yellow guifg=yellow'
+      exe 'syntax match ' . "aloneWord" . ' "\<' . word . '\>" containedin=ALL'
     endfor
+
+    exe 'hi ' . "aloneWord" . ' ctermfg=yellow guifg=yellow'
 endfunction
