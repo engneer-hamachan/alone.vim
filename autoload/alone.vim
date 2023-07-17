@@ -12,5 +12,5 @@ function! alone#Alone(dir)
 
     exe 'hi ' . "aloneWord" . ' ctermfg=yellow guifg=yellow'
 
-    let b:alone_word_exists = 1
+    let g:alone_word_exists = 1
 endfunction
